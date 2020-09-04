@@ -1,0 +1,59 @@
+/**********************************************
+*      Create GKE commons-gke
+**********************************************/
+
+module "commons-gke" {
+  source       = "../../../modules/gke12"
+  environment  = var.env
+  project      = var.project_id
+  region       = var.cluster_region
+  cluster_name = var.cluster_name
+
+  #create_subnetwork = false
+  network           = var.network_name
+  subnetwork_name = element(
+    data.terraform_remote_state.project_setup.outputs.subnetwork_name__commons_private,
+    0,
+  )
+
+  master_ipv4_cidr_block        = "${var.master_ipv4_cidr_block}"
+  cluster_secondary_range_name  = var.cluster_secondary_range_name
+  cluster_ipv4_cidr_block       = var.cluster_ipv4_cidr_block
+  services_secondary_range_name = var.services_secondary_range_name
+  services_ipv4_cidr_block      = var.services_ipv4_cidr_block
+  network_policy                = var.network_policy
+  network_policy_config         = var.network_policy_config
+
+  master_version = var.min_master_version
+
+  master_authorized_network_name = "${var.master_authorized_network_name}"
+  master_authorized_cidr_block = "${var.master_authorized_cidr_block}"
+  use_ip_aliases = var.use_ip_aliases
+
+  // Private Cluster Config
+  enable_private_endpoint = "${var.enable_private_endpoint}"
+  enable_private_nodes = "${var.enable_private_nodes}"
+
+  node_name                = var.node_name
+  node_ipv4_cidr_block     = var.node_ipv4_cidr_block
+  node_labels              = var.node_labels
+  node_tags                = var.node_tags
+  initial_node_count       = var.initial_node_count
+  min_node_cout            = var.min_node_cout
+  max_node_count           = var.max_node_count
+  default_node_pool        = var.default_node_pool
+  preemptible              = var.preemptible
+  image_type               = var.image_type
+  node_auto_upgrade        = var.node_auto_upgrade
+  prod_machine_type        = var.prod_machine_type
+  dev_machine_type         = var.dev_machine_type
+  node_auto_repair         = var.node_auto_repair
+  daily_maintenance_window = var.daily_maintenance_window
+  disk_type                = var.disk_type
+  disk_size_gb             = var.disk_size_gb
+
+  kubernetes_dashboard       = var.kubernetes_dashboard
+  horizontal_pod_autoscaling = var.horizontal_pod_autoscaling
+  http_load_balancing        = var.http_load_balancing
+  oauth_scopes               = var.scopes
+}
