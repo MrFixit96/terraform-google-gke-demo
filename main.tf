@@ -20,7 +20,7 @@ module "commons-gke" {
   ip_range_services = var.ip_range_services
 
   cluster_resource_labels  = var.cluster_resource_labels
-  node_labels              = var.node_labels
-  node_tags                = var.node_tags
-  default_node_pool        = var.default_node_pool
+  node_pools_labels              = var.node_labels
+  node_pools_tags                = var.node_tags
+  remove_default_node_pool       = var.default_node_pool
 }

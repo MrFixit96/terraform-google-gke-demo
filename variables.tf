@@ -11,7 +11,10 @@ variable "subnetwork_name" {
 }
 variable "node_labels" {}
 variable "node_tags" {}
-variable "default_node_pool" {}
+variable "default_node_pool" {
+  description = "Choose whether or not to remove the default node pool"
+  default = false
+}
 variable "min_master_version" {
   default = "latest"
 }
