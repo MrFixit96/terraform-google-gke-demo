@@ -21,7 +21,9 @@ node_labels = {
     }
 }
 
-node_tags = {["allow-http", "allow-https"]}
+node_tags = {
+    all = ["allow-http", "allow-https"]
+}
 default_node_pool = true
 
 min_master_version = "latest"
