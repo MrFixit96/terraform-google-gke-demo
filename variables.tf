@@ -28,7 +28,7 @@ variable "ip_range_pods" {
 }
 variable "ip_range_services" {
   description = "The name of the clusters ip alias range used for services"
-  default = "ip-cidr-range-k8-services"
+  default = "ip-cidr-range-k8-service"
 }
 
 variable "cluster_resource_labels" {}
