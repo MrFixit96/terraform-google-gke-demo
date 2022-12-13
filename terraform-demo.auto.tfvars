@@ -7,7 +7,7 @@ cluster_name = "jca-gke-demo"
 master_authorized_network_name = "home"
 master_authorized_cidr_block = "140.177.227.38/32"
 node_labels =  {
-      env = var.project_id,
+      env = "hc-f9c018d37d474b2c92199cca677",
       owner = "janderton"
     }
 node_tags = ["allow-http", "allow-https"]
