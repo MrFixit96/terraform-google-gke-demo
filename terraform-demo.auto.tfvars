@@ -1,3 +1,6 @@
+credential_file = "/home/janderton/source/creds/jca-tfagent-test.json
+network_name = "jca-tfe-vpc"
+subnet_name = "jca-tfe-subnet"
 env = "dev"
 project_id = "hc-f9c018d37d474b2c92199cca677"
 cluster_region = "us-east1"
