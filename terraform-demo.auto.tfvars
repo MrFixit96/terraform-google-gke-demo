@@ -1,4 +1,3 @@
-credential_file = "/home/janderton/source/creds/jca-tfagent-test.json
 network_name = "jca-tfe-vpc"
 subnet_name = "jca-tfe-subnet"
 env = "dev"
