@@ -4,7 +4,7 @@ subnetwork_name = "jca-tfe-subnet"
 project_id = "hc-f9c018d37d474b2c92199cca677"
 cluster_region = "us-east1"
 cluster_name = "jca-gke-demo"
-cluster_description = "TFE Agent Test Cluster
+cluster_description = "TFE Agent Test Cluster"
 
 # master_authorized_network_name = "home"
 # master_authorized_cidr_block = "140.177.227.38/32"
