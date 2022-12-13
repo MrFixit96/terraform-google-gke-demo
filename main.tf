@@ -9,7 +9,7 @@ module "commons-gke" {
   region         = var.cluster_region
   cluster_name   = var.cluster_name
 
-  min_version    = var.min_version
+  min_master_version    = var.min_master_version
 
   network         = var.network_name
   subnetwork_name =  var.subnetwork_name
