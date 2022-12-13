@@ -15,3 +15,17 @@ variable "default_node_pool" {}
 variable "min_master_version" {
   default = "latest"
 }
+variable "cluster_description" {
+  default ="Test GKE Cluster"
+}
+
+variable "ip_range_pods" {
+  description = "The name of the clusters ip alias range used for pods"
+  default = "ip-cidr-range-k8-pod"
+}
+variable "ip_range_services" {
+  description = "The name of the clusters ip alias range used for services"
+  default = "ip-cidr-range-k8-services"
+}
+
+variable "cluster_resource_labels" {}
