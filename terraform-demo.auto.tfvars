@@ -1,9 +1,9 @@
 env = "dev"
-project_id = "jca-tfe-testing-1da3236b"
-cluster_region = "us-central1"
-cluster_name = "terraform-gke-demo"
+project_id = ""hc-f9c018d37d474b2c92199cca677
+cluster_region = "us-east1"
+cluster_name = "jca-gke-demo"
 master_authorized_network_name = "home"
-master_authorized_cidr_block = "140.177.245.29/32"
+master_authorized_cidr_block = "140.177.227.38/32"
 node_labels = ["owner=jca"] 
 node_tags = ["allow-http", "allow-https"]
 default_node_pool = true
