@@ -14,7 +14,7 @@ cluster_resource_labels =  {
       owner = "janderton"
     }
 
-node_labels = { "all" =
+node_labels = { all =
     {
       env = "hc-f9c018d37d474b2c92199cca677",
       owner = "janderton"
