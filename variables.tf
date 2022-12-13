@@ -12,3 +12,6 @@ variable "subnetwork_name" {
 variable "node_labels" {}
 variable "node_tags" {}
 variable "default_node_pool" {}
+variable "min_version" {
+  default = "latest"
+}
