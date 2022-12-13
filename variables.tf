@@ -1,4 +1,4 @@
-variable "env" {}
+# variable "env" {}
 variable "project_id" {}
 variable "credential_file" {}
 variable "cluster_region" {}
