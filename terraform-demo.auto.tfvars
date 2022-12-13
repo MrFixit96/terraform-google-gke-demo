@@ -14,11 +14,11 @@ cluster_resource_labels =  {
       owner = "janderton"
     }
 
-node_labels = {
+node_labels = { all =
     {
-      env = "hc-f9c018d37d474b2c92199cca677",
+      env = "hc-f9c018d37d474b2c92199cca677"
       owner = "janderton"
-    },
+    }
 }
 
 node_tags = ["allow-http", "allow-https"]
