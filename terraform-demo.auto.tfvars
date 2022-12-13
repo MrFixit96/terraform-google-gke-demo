@@ -1,5 +1,5 @@
 env = "dev"
-project_id = ""hc-f9c018d37d474b2c92199cca677
+project_id = "hc-f9c018d37d474b2c92199cca677"
 cluster_region = "us-east1"
 cluster_name = "jca-gke-demo"
 master_authorized_network_name = "home"
